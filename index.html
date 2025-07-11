@@ -312,7 +312,7 @@ const step3StorageKey = "step3State_ff_v25_page21298"; // اسم جديد
     if (allCompleted) {
       document.getElementById("finalMessage").innerText = '✅ تم تنفيذ كل الخطوات بنجاح';
       document.getElementById("finalMessage").style.color = 'lime';
-      ['btnApk', 'btnObb', 'btnTool'].forEach(id => {
+      ['btnApk', 'btnObb', ].forEach(id => {
         const btn = document.getElementById(id);
         btn.classList.add('active');
         btn.innerText = btn.innerText.replace('🔒', '🔓');
