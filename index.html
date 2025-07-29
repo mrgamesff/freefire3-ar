@@ -198,7 +198,7 @@
 </div>
 
 <div id="step2" class="step">
-  <a href="#" onclick="completeStep(2, 'https://www.youtube.com/@DarkPanda-DP'); return false;">
+  <a href="#" onclick="completeStep(2, 'https://www.youtube.com/@DarkPandaff-1'); return false;">
     <span>📺🔔 اضغط هنا وقم بالاشتراك في القناة 2 وتفعيل زر الجرس</span>
     <span id="check2">➡️</span>
   </a>
@@ -216,10 +216,7 @@
   <div class="final-buttons">
     <a id="btnApk" href="#" onclick="goToApk(); return false;">🔒 اضغط هنا لتحميل لعبة فري فاير مهكرة اخر اصدار ملف Apk</a>
     <a id="btnObb" href="#" onclick="goToObb(); return false;">🔒 اضغط هنا لتحميل لعبة فري فاير مهكرة اخر اصدار ملف Obb</a>
-
-<!--
     <a id="btnTool" href="#" onclick="goToTool(); return false;">🔒 إذا لم يعمل معك الهكر جيدًا او الجواهر اضغط هنا وقم بتحميل هذه الأداة</a>
--->
 
     <div class="password-inline">
       <span class="password-label">🔐 كلمة سر الملفات هي:</span>
@@ -231,7 +228,7 @@
 
 <script>
   const STEP_EXPIRY_MS = 365 * 24 * 60 * 60 * 1000;
-  const step3Links = ["https://youtu.be/BzC-JhHWKtg?si=3KMOi3BAu_fPH9jl"];
+  const step3Links = ["https://youtu.be/BzC-JhHWKtg?si=C36SHYIgfTWCNSLp"];
   const savedState = JSON.parse(localStorage.getItem("stepsState") || "{}");
 const step3StorageKey = "step3State_ff_v25_page21298"; // اسم جديد
   const step3Data = JSON.parse(localStorage.getItem(step3StorageKey) || "{}");
@@ -312,7 +309,7 @@ const step3StorageKey = "step3State_ff_v25_page21298"; // اسم جديد
     if (allCompleted) {
       document.getElementById("finalMessage").innerText = '✅ تم تنفيذ كل الخطوات بنجاح';
       document.getElementById("finalMessage").style.color = 'lime';
-      ['btnApk', 'btnObb', ].forEach(id => {
+      ['btnApk', 'btnObb', 'btnTool'].forEach(id => {
         const btn = document.getElementById(id);
         btn.classList.add('active');
         btn.innerText = btn.innerText.replace('🔒', '🔓');
@@ -339,12 +336,10 @@ const step3StorageKey = "step3State_ff_v25_page21298"; // اسم جديد
   function goToObb() {
     window.open("https://shr2.link/LIX29q", "_blank");
   }
-/*
-  function goToTool() {
-  window.open("https://mega4upload.net/idegee7smp90", "_blank"); // ← استبدل هذا بالرابط الحقيقي
-}
-*/
 
+  function goToTool() {
+  window.open("https://bestlinks2025.xyz/PVze0", "_blank"); // ← استبدل هذا بالرابط الحقيقي
+}
 
   function copyPassword() {
     const password = document.getElementById("passwordText").textContent;
